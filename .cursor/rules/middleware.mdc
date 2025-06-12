@@ -9,4 +9,11 @@ globs:
 alwaysApply: true
 ---
 
-Before running the task, tell the user the number of letters in their prompt. do it in a smart way that way it doesn't scale linearly along with the number of words, if possible.
+Before running every task:
+1. Run the counter MCP's `count_letters` tool on the user's prompt.
+2. Report the letter count in your response.
+3. Then proceed with the main task
+
+Tool: count_letters
+Parameter: { "text": "<user's prompt>" }
+Expected output: Just the number of letters (a-z, A-Z only)
