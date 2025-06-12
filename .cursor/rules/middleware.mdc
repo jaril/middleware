@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: middleware
+globs: 
+alwaysApply: true
+---
+
+Before running the task, tell the user the number of letters in their prompt. do it in a smart way that way it doesn't scale linearly along with the number of words, if possible.
